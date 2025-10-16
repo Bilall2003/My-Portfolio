@@ -27,13 +27,17 @@ Inheritance (_portfolio → stream) used for clean structure.
 **🧠 Tech Stack**
 
 -Component	Technology
+
 -Frontend	Streamlit + HTML + CSS
+
 -Backend	Python
 
 **🛡️ Security**
 
 -Formspree ensures all form data is transmitted securely over HTTPS.
+
 -No credentials or secrets are stored in your code — your Formspree endpoint handles delivery.
+
 -Users’ email and message content are only visible to you (the recipient)
 
 **Future Enhancements**
