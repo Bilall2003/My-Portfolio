@@ -32,6 +32,10 @@ Inheritance (_portfolio → stream) used for clean structure.
 
 -Backend	Python
 
+-Email Handling	Formspree API
+
+-Design	Custom CSS gradients, columns, and layout management
+
 **🛡️ Security**
 
 -Formspree ensures all form data is transmitted securely over HTTPS.
@@ -45,6 +49,5 @@ Inheritance (_portfolio → stream) used for clean structure.
 ✅ Add Google reCAPTCHA to prevent bot submissions
 ✅ Include more projects with visuals
 ✅ Deploy on Streamlit Cloud or Render
-Email Handling	Formspree API
 
-Design	Custom CSS gradients, columns, and layout management
+
