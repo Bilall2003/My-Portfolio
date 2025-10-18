@@ -405,16 +405,6 @@ class stream(_portfolio):
             unsafe_allow_html=True
         )
         
-        with open(r"D:\Bilal folder\Mycv.pdf", "rb") as pdf_file:
-            PDFbyte = pdf_file.read()
-
-        st.sidebar.download_button(
-                label="📄 Download My Resume",
-                data=PDFbyte,
-                file_name="Bilal_Ahmed_CV.pdf", 
-                mime="application/pdf"
-            )
-        
         option={
             "👋 About me":self.run_info,
             "📚 My Projects":self.run_projects,
