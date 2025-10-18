@@ -63,13 +63,14 @@ class _portfolio:
     
     def __info(self):
         
-        col_1,col_2=st.columns([2,1],gap="small")
+        st.set_page_config(layout="wide")
+        col_1,col_2=st.columns([0.5,1],gap="small")
         with col_1:
             st.markdown("<h1 class='gradient-title'>Hi, I'm Bilal Ahmed</h1>", unsafe_allow_html=True)
             st.markdown("<h4 class='gradient-subheader'>Data Scientist | AI & Machine Learning | Python</h4>", unsafe_allow_html=True)
             st.markdown("<p class='gradient-body'>Karachi, Sindh, Pakistan</p>", unsafe_allow_html=True)
         with col_2:
-            st.image(r"D:\Bilal folder\Screenshot 2025-10-13 154750.png",use_container_width=True)
+            st.image(r"D:\Bilal folder\Screenshot 2025-10-13 154750.png")
             
         
         st.divider()
@@ -115,13 +116,13 @@ class _portfolio:
             
             st.image("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsNj_cw0oHhnQkgAk6Ppm8IhmOaWyhC_L-2Q&s",width=100)
             st.markdown("<h3 class='gradient-subheader'>Streamlit</h3>", unsafe_allow_html=True)
-            st.markdown("<p class='gradient-body'>use NLP techniques for tasks like text classification, sentiment analysis, and chatbot development — teaching machines to process and respond to text intelligently.</p>", unsafe_allow_html=True)
+            st.markdown("<p class='gradient-body'>use Streamlit to build dynamic dashboards, AI demos, and data-driven portfolios.</p>", unsafe_allow_html=True)
         
         with col6:
             
             st.image("https://datascientest.com/en/files/2023/09/nlp.jpg",width=150)
             st.markdown("<h3 class='gradient-subheader'>NLP</h3>", unsafe_allow_html=True)
-            st.markdown("<p class='gradient-body'>use Streamlit to build dynamic dashboards, AI demos, and data-driven portfolios — all without needing frontend development skills.</p>", unsafe_allow_html=True)
+            st.markdown("<p class='gradient-body'>use NLP techniques for tasks like text classification, sentiment analysis, and chatbot development — teaching machines to process and respond to text intelligently.</p>", unsafe_allow_html=True)
             
         st.divider()
         st.markdown("<h2 class='gradient-title'>Experience</h2>", unsafe_allow_html=True)
@@ -163,9 +164,122 @@ class _portfolio:
         st.link_button("Certificate Link","https://udemy-certificate.s3.amazonaws.com/image/UC-173b6a3a-bc4e-4206-8cd5-b15d3498beaa.jpg?v=1720624599000")
             
     def projects(self):
-        st.markdown("<h3 class='gradient-subheader'>Machine Learning</h3>", unsafe_allow_html=True)
+
+        st.set_page_config(layout="wide")
+        # Add custom CSS
+        st.markdown("""
+        <style>
+            .project-section {
+                text-align: center;
+                color: #a78bfa;
+                font-size: 3rem;
+                font-weight: bold;
+                margin-bottom: 50px;
+            }
+
+            .project-card {
+                background: #2b004f;
+                border-radius: 15px;
+                padding: 25px;
+                box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+                color: white;
+                transition: all 0.2s ease;
+            }
+
+            .project-card:hover {
+                transform: translateY(-20px);
+                box-shadow: 0px 8px 20px rgba(0,50,0,0.5);
+            }
+
+            .project-image {
+                width: 100%;
+                border-radius: 50px;
+                margin-bottom: 15px;
+            }
+
+            .tag {
+                display: inline-block;
+                background-color: #5b21b6;
+                padding: 5px 10px;
+                border-radius: 10px;
+                font-size: 0.8rem;
+                margin: 2px 3px;
+            }
+
+            .github-btn {
+                display: inline-block;
+                background: linear-gradient(90deg, #6a11cb, #2575fc);
+                padding: 10px 25px;
+                border-radius: 20px;
+                color: white;
+                font-weight: bold;
+                text-decoration: none;
+                margin-top: 10px;
+            }
+
+            .github-btn:hover {
+                background: linear-gradient(90deg, #2575fc, #6a11cb);
+               
+            }
+        </style>
+        """, unsafe_allow_html=True)
+
+        # Section title
+        st.markdown("<div class='project-section'>Featured Projects</div>", unsafe_allow_html=True)
+
+        # Columns for 3 projects
+        col1, col2, col3 = st.columns(3)
+
+        with col1:
+            st.markdown("""
+            <div class='project-card'>
+                <img src='https://www.advanced-television.com/wp-content/uploads/2023/01/IMDB-big.jpg' class='project-image'>
+                <h3>IMDb Movie Recommendation Dashboard</h3>
+                <p>An interactive Movie Recommendation System + EDA Tool built with Python, Streamlit, and Machine Learning.Upload your movie dataset, explore data insights, and get AI-driven movie recommendations</p>
+                <div>
+                    <span class='tag'>Machine Learning</span><span class='tag'>Python</span><span class='tag'>Streamlit</span><span class='tag'>EDA</span><span class='tag'>HTML</span><span class='tag'>CSS</span>
+                </div>
+                <a href='https://github.com/Bilall2003/-IMDb-Movie-Recommendation-Dashboard-.git' class='github-btn'>GitHub</a>
+            </div>
+            """, unsafe_allow_html=True)
+
+        with col2:
+            st.markdown("""
+            <div class='project-card'>
+                <img src='https://storage.googleapis.com/kaggle-datasets-images/5402820/8973821/04b597ad019ff012e631cca9975bf620/dataset-cover.jpg?t=2024-07-17-08-16-49' class='project-image'>
+                <h3>Term-Deposit-Subscription-Prediction-Bank-Marketing-using-Streamlit-Beta</h3>
+                <p>An interactive Streamlit application for data analysis, machine learning, and deployment built using the Bank Marketing Dataset . This project automates the end-to-end data science workflow — from data cleaning, exploratory analysis, feature engineering, model training, evaluation, deployment, and user feedback..</p>
+                <div>
+                    <span class='tag'>Python</span><span class='tag'>AI</span><span class='tag'>Data Analysis</span><span class='tag'>Machine Learning</span>
+                </div>
+                <a href='https://github.com/Bilall2003/Term-Deposit-Subscription-Prediction-Bank-Marketing-using-Streamlit-Beta-.git' class='github-btn'>GitHub</a>
+            </div>
+            """, unsafe_allow_html=True)
+
+        with col3:
+            st.markdown("""
+            <div class='project-card'>
+                <img src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c' class='project-image'>
+                <h3>Predicting-Sale-Price-of-Houses</h3>
+                <p>This Streamlit application predicts house sale prices using the Ames Housing Dataset.It integrates Exploratory Data Analysis (EDA), preprocessing, insights visualization, model training, evaluation, and deployment of ML models.</p>
+                <div>
+                    <span class='tag'>Python</span><span class='tag'>Streamlit</span><span class='tag'>Machine Learning</span>
+                </div>
+                <a href='https://github.com/Bilall2003/Predicting-Sale-Price-of-Houses.git' class='github-btn'>GitHub</a>
+            </div>
+            """, unsafe_allow_html=True)
+
+        # Button under projects
+        st.markdown("""
+        <div style='text-align:center; margin-top:40px;'>
+            <a href='https://github.com/Bilall2003?tab=repositories' class='github-btn'>More Projects</a>
+        </div>
+        """, unsafe_allow_html=True)
+
     
     def contacts(self):
+             
+        st.set_page_config(layout="centered")
         st.markdown("<h2 class='gradient-title'>Get In Touch</h2>", unsafe_allow_html=True)
         st.markdown("<p1 class='gradient-body'>Have a project in mind or want to collaborate? Feel free to reach out.</p1>", unsafe_allow_html=True)
         st.divider()
@@ -216,7 +330,7 @@ class _portfolio:
         if st.button("Send Message"):
         # Validation
             if len(name.strip()) == 0 or len(email.strip()) == 0 or len(message.strip()) == 0:
-                 st.error("⚠️ Please fill out all fields before sending.")
+                 st.warning("⚠️ Please fill out all fields before sending.")
             else:
             # Define payload *inside* the else block
                 data = {
@@ -235,7 +349,7 @@ class _portfolio:
                     st.error(f"❌ Something went wrong (Error {response.status_code}). Please try again later.")
 
             except Exception as e:
-                st.error(f"⚠️ Failed to send message: {e}")
+                st.error(f"⚠️ Failed to send message")
                     
 
 class stream(_portfolio):
@@ -256,6 +370,7 @@ class stream(_portfolio):
         self.contacts()
         
     def app(self):
+        
  
         if "text" not in st.session_state:
             st.session_state["text"] = "Welcome To My Portfolio"
@@ -289,6 +404,17 @@ class stream(_portfolio):
             f"<h1 class='animated-text'>{st.session_state['text']}</h1>",
             unsafe_allow_html=True
         )
+        
+        with open(r"D:\Bilal folder\Mycv.pdf", "rb") as pdf_file:
+            PDFbyte = pdf_file.read()
+
+        st.sidebar.download_button(
+                label="📄 Download My Resume",
+                data=PDFbyte,
+                file_name="Bilal_Ahmed_CV.pdf", 
+                mime="application/pdf"
+            )
+        
         option={
             "👋 About me":self.run_info,
             "📚 My Projects":self.run_projects,
@@ -297,7 +423,6 @@ class stream(_portfolio):
         key_sel=st.sidebar.selectbox("Select",list(option.keys()))
         value_sel=option[key_sel]
         value_sel()
-        
         
 obj=stream()
 obj.app()
