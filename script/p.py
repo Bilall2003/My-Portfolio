@@ -70,7 +70,7 @@ class _portfolio:
             st.markdown("<h4 class='gradient-subheader'>Data Scientist | AI & Machine Learning | Python</h4>", unsafe_allow_html=True)
             st.markdown("<p class='gradient-body'>Karachi, Sindh, Pakistan</p>", unsafe_allow_html=True)
         with col_2:
-            st.image(r"D:\Bilal folder\Screenshot 2025-10-13 154750.png")
+            st.image("script/profile.png")
             
         
         st.divider()
@@ -223,9 +223,39 @@ class _portfolio:
             }
         </style>
         """, unsafe_allow_html=True)
+        
+        st.markdown("""
+                <style>
+                .center-container {
+                    display: flex;
+                    justify-content: center;  /* horizontal center */
+                    align-items: center;      /* vertical center */
+                    height: 5vh;             /* adjust for how centered you want it */
+                    text-align: center;
+                }
 
-        # Section title
-        st.markdown("<div class='project-section'>Featured Projects</div>", unsafe_allow_html=True)
+                .animated-text {
+                    font-size: 50px;
+                    font-weight: 500;
+                    margin-bottom: 60px; 
+                    background: linear-gradient(270deg, #ff6ec4, yellow, #4ADEDE, #ff6ec4);
+                    background-size: 800% 800%;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    animation: gradientMove 5s ease infinite;
+                }
+
+                @keyframes gradientMove {
+                    0% { background-position: 0% 50%; }
+                    50% { background-position: 100% 50%; }
+                    100% { background-position: 0% 50%; }
+                }
+                </style>
+
+                <div class="center-container">
+                    <div class="animated-text">Featured Projects</div>
+                </div>
+            """, unsafe_allow_html=True)
 
         # Columns for 3 projects
         col1, col2, col3 = st.columns(3)
