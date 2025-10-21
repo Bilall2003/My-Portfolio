@@ -1,6 +1,13 @@
 import streamlit as st
 import requests
 
+st.markdown("""
+<meta property="og:title" content="Bilal Ahmed-Portfolio" />
+<meta property="og:description" content="My Streamlit portfolio showcasing my projects, resume, and skills in Data Science & ML." />
+<meta property="og:image" content="script/metaprofile.png" />
+<meta property="og:url" content="https://bilall2003-my-portfolio-scriptp-zjtvup.streamlit.app/" />
+""", unsafe_allow_html=True)
+
 class _portfolio:
     def font(self):
          # Inject custom CSS for background and gradients
@@ -8,7 +15,7 @@ class _portfolio:
         <style>
         /* 🌈 Gradient Background */
         body {
-            background: linear-gradient(135deg, #0F2027, #203A43, #2C536);
+            background: linear-gradient(135deg, #0F2027, #203A43, #2C536F);
             background-attachment: fixed;
             color: black;
         }
