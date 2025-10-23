@@ -206,7 +206,7 @@ class _portfolio:
 
             .tag {
                 display: inline-block;
-                background-color: white;
+                background-color: #5b21b6;
                 padding: 5px 10px;
                 border-radius: 10px;
                 font-size: 0.8rem;
