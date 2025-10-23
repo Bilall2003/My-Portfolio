@@ -35,7 +35,7 @@ class _portfolio:
         /* ✨ Gradient Text Styles */
         .gradient-title {
             font-size: 50px;
-            font-weight: 800;
+            font-weight: 900;
             background: linear-gradient(90deg, #00C9FF, #92FE9D);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -81,7 +81,7 @@ class _portfolio:
             
         
         st.divider()
-        st.markdown("<h2 class='gradient-title'>Professional Summary</h2>", unsafe_allow_html=True)
+        st.markdown("<h1 class='gradient-title'>Professional Summary</h1>", unsafe_allow_html=True)
         st.markdown("""
         <p class='gradient-body'>
         I work with Machine Learning to turn data into intelligent insights — from prediction models to smart automation.
@@ -91,7 +91,7 @@ class _portfolio:
         """, unsafe_allow_html=True)
         st.divider()
 
-        st.markdown("<h2 class='gradient-title'>Core Competencies</h2>", unsafe_allow_html=True)
+        st.markdown("<h1 class='gradient-title'>Core Competencies</h1>", unsafe_allow_html=True)
         st.markdown("<p class='gradient-body'>Leveraging Python and specialized libraries for end-to-end data science projects.</p>", unsafe_allow_html=True)
 
         col1, col2= st.columns(2 ,gap="large")
@@ -132,8 +132,29 @@ class _portfolio:
             st.markdown("<p class='gradient-body'>use NLP techniques for tasks like text classification, sentiment analysis, and chatbot development — teaching machines to process and respond to text intelligently.</p>", unsafe_allow_html=True)
             
         st.divider()
-        st.markdown("<h2 class='gradient-title'>Experience</h2>", unsafe_allow_html=True)
+        st.markdown("<h1 class='gradient-title'>Education</h1>", unsafe_allow_html=True)
         
+        col7,col8=st.columns([1,2],gap="large")
+        
+        with col7:
+            st.markdown("<h3 class='gradient-subheader'>Uit University</h3>", unsafe_allow_html=True)
+        
+        with col8:
+            
+            st.markdown("<p2 class='gradient-body'>|****2023-2027****|</p2>", unsafe_allow_html=True)
+            
+        col9,col10=st.columns([1,2],gap="large")
+        
+        with col9:
+            st.markdown("<h4 class='gradient-title'>Bachelors in Computer Science(BSCS)</h4>", unsafe_allow_html=True)
+        
+        with col10:
+            
+            st.markdown("<p2 class='gradient-body'>Khi,Pakistan</p2>", unsafe_allow_html=True)
+        st.link_button("University Website","https://uitu.edu.pk/")
+        st.divider()
+        st.markdown("<h1 class='gradient-title'>Experience</h1>", unsafe_allow_html=True)
+            
         col7,col8=st.columns([1,2],gap="large")
         
         with col7:
@@ -158,7 +179,7 @@ class _portfolio:
         
         st.divider()
         
-        st.markdown("<h2 class='gradient-title'>Certificate</h2>", unsafe_allow_html=True)
+        st.markdown("<h1 class='gradient-title'>Certificate</h1>", unsafe_allow_html=True)
         
         col11,col12=st.columns([1,2],gap="large")
         
