@@ -217,7 +217,7 @@ class _portfolio:
                 display: inline-block;
                 background: linear-gradient(90deg, #6a11cb, #2575fc);
                 padding: 10px 25px;
-                border-radius: 20px;
+                border-radius: 10px;
                 color: white;
                 font-weight: bold;
                 text-decoration: none;
