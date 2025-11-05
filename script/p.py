@@ -184,12 +184,34 @@ class _portfolio:
         col11,col12=st.columns([1,2],gap="large")
         
         with col11:
-            st.markdown("<p2 class='gradient-subheader'>Python BootCamp</p2>", unsafe_allow_html=True)
+            st.markdown("<p2 class='gradient-subheader'>1. Python BootCamp</p2>", unsafe_allow_html=True)
             
         with col12:
             st.markdown("<p2 class='gradient-body'>Udemy| **july10, 2024** |</p2>", unsafe_allow_html=True)
         
         st.link_button("Certificate Link","https://udemy-certificate.s3.amazonaws.com/image/UC-173b6a3a-bc4e-4206-8cd5-b15d3498beaa.jpg?v=1720624599000")
+        
+        st.divider()
+        col13,col14=st.columns([1,2],gap="large")
+        
+        with col13:
+            st.markdown("<p2 class='gradient-subheader'>2. Python for Machine Learning and Data Science Masterclass</p2>", unsafe_allow_html=True)
+            
+        with col14:
+            st.markdown("<p2 class='gradient-body'>Udemy| **Nov2, 2025** |</p2>", unsafe_allow_html=True)
+        
+        st.link_button("Certificate Link","https://www.udemy.com/certificate/UC-c570f699-51ef-46aa-a6e8-51011b9c7b9c/")
+        st.divider()
+        
+        col15,col16=st.columns([1,2],gap="large")
+        
+        with col15:
+            st.markdown("<p2 class='gradient-subheader'>3. Understanding Sustainable Development Course(SDGS)</p2>", unsafe_allow_html=True)
+            
+        with col16:
+            st.markdown("<p2 class='gradient-body'>Udemy| **Dec 25, 2023** |</p2>", unsafe_allow_html=True)
+        
+        st.link_button("Certificate Link","https://udemy-certificate.s3.amazonaws.com/image/UC-ebf8caba-6601-4d44-a69a-b408d783d6c5.jpg?v=1703513049000")
             
     def projects(self):
 
