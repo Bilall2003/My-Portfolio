@@ -230,20 +230,25 @@ class _portfolio:
             .project-card {
                 background: #2b004f;
                 border-radius: 15px;
+                margin-top:23px;
                 padding: 25px;
                 box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
                 color: white;
                 transition: all 0.2s ease;
             }
 
+            
             .project-card:hover {
                 transform: translateY(-20px);
-                box-shadow: 0px 8px 20px rgba(0,50,0,0.5);
+                box-shadow: 0px 8px 20px rgba(0,100,0,1);
             }
+
 
             .project-image {
                 width: 100%;
-                border-radius: 50px;
+                height: 220px;     
+                object-fit: cover; 
+                border-radius: 20px;
                 margin-bottom: 15px;
             }
 
@@ -326,32 +331,32 @@ class _portfolio:
         with col2:
             st.markdown("""
             <div class='project-card'>
-                <img src='https://storage.googleapis.com/kaggle-datasets-images/5402820/8973821/04b597ad019ff012e631cca9975bf620/dataset-cover.jpg?t=2024-07-17-08-16-49' class='project-image'>
-                <h3>Term-Deposit-Subscription-Prediction-Bank-Marketing-using-Streamlit-Beta</h3>
-                <p>An interactive Streamlit application for data analysis, machine learning, and deployment built using the Bank Marketing Dataset . This project automates the end-to-end data science workflow — from data cleaning, exploratory analysis, feature engineering, model training, evaluation, deployment, and user feedback..</p>
+                <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLJ-apoAkh-2O2pGJwp47HbqtyY2lvvvSoOQ&s' class='project-image'>
+                <h3>PixCraft</h3>
+                <p>Interactive Streamlit dashboard to remove backgrounds, blur images, and apply color quantization — built with Python, OpenCV, and scikit-learn.</p>
                 <div>
-                    <span class='tag'>Python</span><span class='tag'>AI</span><span class='tag'>Data Analysis</span><span class='tag'>Machine Learning</span>
+                    <span class='tag'>Python</span><span class='tag'>AI</span><span class='tag'>Computer Vision</span><span class='tag'>Machine Learning</span><span class='tag'>image processing</span>
                 </div>
-                <a href='https://github.com/Bilall2003/Term-Deposit-Subscription-Prediction-Bank-Marketing-using-Streamlit-Beta-.git' class='github-btn'>GitHub</a>
+                <a href='https://github.com/Bilall2003/PixCraft.git' class='github-btn'>GitHub</a>
             </div>
             """, unsafe_allow_html=True)
 
         with col3:
             st.markdown("""
             <div class='project-card'>
-                <img src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c' class='project-image'>
-                <h3>Predicting-Sale-Price-of-Houses</h3>
-                <p>This Streamlit application predicts house sale prices using the Ames Housing Dataset.It integrates Exploratory Data Analysis (EDA), preprocessing, insights visualization, model training, evaluation, and deployment of ML models.</p>
+                <img src='https://i.ytimg.com/vi/99ndyGYodSk/maxresdefault.jpg' class='project-image'>
+                <h3>social media sentimental Analysis</h3>
+                <p>The Social Media Sentiment Analyzer is an interactive Streamlit web application that performs sentiment analysis on social media text data. It helps visualize, explore, and analyze the sentiments expressed in text — such as positive, neutral, or negative emotions — through a combination of data visualization, text analytics, NLP and machine learning.</p>
                 <div>
-                    <span class='tag'>Python</span><span class='tag'>Streamlit</span><span class='tag'>Machine Learning</span>
+                    <span class='tag'>Python</span><span class='tag'>Streamlit</span><span class='tag'>Machine Learning</span><span class='tag'>NLP</span>
                 </div>
-                <a href='https://github.com/Bilall2003/Predicting-Sale-Price-of-Houses.git' class='github-btn'>GitHub</a>
+                <a href='https://github.com/Bilall2003/social-media-sentimental-Analysis.git' class='github-btn'>GitHub</a>
             </div>
             """, unsafe_allow_html=True)
 
         # Button under projects
         st.markdown("""
-        <div style='text-align:center; margin-top:40px;'>
+        <div style='text-align:center; margin-top:1px;'>
             <a href='https://github.com/Bilall2003?tab=repositories' class='github-btn'>More Projects</a>
         </div>
         """, unsafe_allow_html=True)
@@ -504,6 +509,7 @@ class stream(_portfolio):
                     }
                 </style>
             """, unsafe_allow_html=True)
+        
 
         st.sidebar.markdown("<p class='custom-text'>© 2025 Bilal Ahmed | All Rights Reserved</p>",unsafe_allow_html=True)
   
