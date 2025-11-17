@@ -467,8 +467,8 @@ class stream(_portfolio):
             -webkit-text-fill-color: transparent;
             animation: gradientMove 3s ease infinite;
             text-align: center;
-            margin-bottom: 20px;
-            padding-top: 10px;
+            margin-bottom: 55px;
+            padding-top: 50px;
         }
 
         @keyframes gradientMove {
@@ -493,6 +493,20 @@ class stream(_portfolio):
         key_sel=st.sidebar.selectbox("Select",list(option.keys()))
         value_sel=option[key_sel]
         value_sel()
+        
+        st.markdown("""
+                <style>
+                    .custom-text {
+                        padding-top: 470px;
+                        color: white;
+                        font-weight: 900;
+                        # display: block;
+                    }
+                </style>
+            """, unsafe_allow_html=True)
+
+        st.sidebar.markdown("<p class='custom-text'>© 2025 Bilal Ahmed | All Rights Reserved</p>",unsafe_allow_html=True)
+  
         
 obj=stream()
 obj.app()
